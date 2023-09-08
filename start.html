@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intento</title>
+    <link rel="stylesheet" href="styles/first.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+    <header class="item1">
+        <nav class="menu">
+            <ul>
+                <li><a href="#" class="item one">Home</a></li>
+                <li><a href="#" class="item two">About</a></li>
+                <li><a href="#" class="item three">Galery</a></li>
+                <li><a href="#" class="item four">Done works</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wall"></div>
+    <main class="item2">
+        <aside class="leftsidebar">
+            <h1 id="h1" class="registr">Registration form</h1>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Write your name" id="name"><br>
+                    <label for="surname">Surname:</label>
+                    <input type="text" name="surname" placeholder="Write your surname" id="surname"><br>
+                    <label for="email">Email:</label>
+                    <input required type="email" name="email" placeholder="Write your email" id="email" ><br>
+                    Gender:<br>
+                    <label for="Male">Male</label>
+                    <input type="radio" name="gender" value="Male" id="Male"> <br>
+                    <label for="Female">Female</label>
+                    <input type="radio" name="gender" value="Female" id="Female"><br>
+                    <label for="Other">Other</label>
+                    <input type="radio" name="gender" value="Other" id="Other"><br>
+                    <label for="bday">Data of birth:</label>
+                    <input type="date" name="bday" min="1920-01-02" id="bday"><br>
+                    <label for="password">Password:</label>
+                    <input required type="password" name="password" placeholder="Set your password" id="password"><br>
+                    <input type="submit" value="submit" formaction="" formmethod="post" formtarget="blank" formnovalidate value="submit" id="submit">
+                </fieldset>
+
+            </form>
+        </aside>
+        <article class="main">
+            <div class="unit i1"></div>
+            <div class="unit i2"></div>
+            <div class="unit i3"></div>
+            <div class="unit i4"></div>
+            <div class="unit i5"></div>
+            <div class="unit i6"></div>
+        </article>
+        <div class="sercher">
+            <form class="find">
+                <input type="search" name="search" class="search" placeholder="Type to search">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </form>
+        </div>
+    </main>
+    <footer class="item3">
+        <div class="footfirst">
+            <h2>* Important Terms and Promotional Offer Details:</h2>
+            <p>All rights have predefined by Georgian's law ministry</p>
+            <p>Private policy works with desition head of manger company <ins>John Wick</ins></p>
+        </div>
+        <div class="footsecond">
+            <h2>Information valid : <span id="monthYear"></span></h2>
+            <details>
+                <summary>Copyright 1999-2022 Intento,LLC</summary>
+                <p>By References Data</p>
+                <p>Website fully owned to Georgio</p>
+            </details>
+        </div>
+    </footer>
+    <script src="javascript/first.js"></script>
+</body>
+</html>

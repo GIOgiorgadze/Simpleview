@@ -1,0 +1,122 @@
+@media (min-width:300px) and (max-width:950px) {
+    *{
+        box-sizing: border-box;
+        margin:0px; 
+    }
+    :root{
+        font-size:16px;
+    }
+    header{
+        background-color:gainsboro;
+        position: fixed;
+        width: 100vw;
+        z-index: 1;
+    }
+    .menu{
+        position: relative;
+        right:2em;
+    }
+    .menu ul{
+        display:inline-flex;
+        height:4em;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    .menu ul li{
+        list-style-type: none;
+        font-size:clamp(10px,12px,14px);
+        margin: 0.2em;
+        width:5rem;
+        
+    }
+    .menu ul li a{
+        display: block;
+        text-decoration: none;
+        color:blue;
+        border-left:0.1em solid blue;
+        padding-left: 0.7em;
+        transition: all ease-in-out 100ms;
+    }
+    .menu ul li a:hover{
+        display: block;
+        text-decoration: none;
+        color:blue;
+        font-size: 1.1em;
+        border-left:0.2em solid blue;
+        padding-left: 0.7em;
+    }
+    .wall{
+        height:4em;
+    }
+    main{
+        display: block;
+        height: auto;
+        background-color: aqua;
+        padding-left: 1em;
+        padding-bottom: 2em;
+    }
+    aside{
+        width: max-content;
+        height:auto;
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:20em 20em 20em 20em 20em 20em;
+        margin-top: 7em;
+        width: 90%;
+        background-color:gray;
+    }
+    .sercher{
+        position: absolute;
+        width:clamp(10em,14em,18em);
+        height:clamp(2em,4em,6em);
+        border-radius: 10px;
+        left:38%;
+        top:30em;
+        background-color: transparent;
+    }
+    .find{
+        position: relative;
+        background-color:transparent;
+        height: 100%; 
+        width: 100%;
+        right: 50px;
+    }
+    .search{
+        width:80%;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.4;
+        border:2px solid transparent;
+        border-left: 0px;
+        font-size:clamp(16px,20px,24px);
+    }
+    .fa-sharp{
+      position: absolute;
+      transform: translateX(0px);
+      transform: translateY(-4.2rem);
+      font-size:3em;
+      color:gray;
+      opacity: 0.6;
+    }
+    .search:focus+.fa-sharp{
+        display: none;
+    }
+    .search:focus{
+        opacity: 0.9;
+    }
+    .item3{
+        display: block;
+        background-color:gainsboro;
+        height: max-content;
+        padding-bottom: 2em;
+    }
+    .footfirst,.footsecond{
+        margin-left:1em;
+        margin-top:1em;
+    }
+}
